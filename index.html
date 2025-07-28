@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gift.css">
     <title>gifts</title>
 </head>
-<body background="pinkb.png">
+<body background="pinkbg.png">
     <script src="revel.js"></script>
-    <div class="score">
+    <!-- <div class="score">
         <div class="round" >
             <div class="circle"></div>
             <div class="heart"></div>
@@ -24,8 +24,14 @@
             <div class="heart"></div>
         </div>
         
-    </div>
-    <div class="layout">
+    </div> -->
+    
+    <DIV class="play">
+        <button class="button-63" role="button" onclick="Dis()" id="play">PLAY NOW</button>
+    </DIV>
+    <div class="layout" id="lay">
+
+         
         <div class="tlayout">
             <input type="text" name="dvdgd" id="1" class="input-text">
             <input type="text" name="dvdgd" id="2" class="input-text">
@@ -73,41 +79,41 @@
            <button class="button-5" id="a4" onclick=" hideButton('a4')">4</button>
            <button class="button-5" id="a5" onclick=" hideButton('a5')">5</button>
            <button class="button-5" id="a6" onclick=" hideButton('a6')">6</button>
-           <button class="button-5" id="a7" onclick="hideButton('a7')"></button>
-           <button class="button-5" id="a8" onclick="hideButton('a8')"></button>
-           <button class="button-5" id="a9" onclick="hideButton('a9')"></button>
-           <button class="button-5" id="a10" onclick="hideButton('a10')"></button>
-           <button class="button-5" id="a11" onclick="hideButton('a11')"></button>
-           <button class="button-5" id="a12" onclick="hideButton('a12')"></button>
-           <button class="button-5" id="a13" onclick="hideButton('a13')"></button>
-           <button class="button-5" id="a14" onclick="hideButton('a14')"></button>
-           <button class="button-5" id="a15" onclick="hideButton('a15')"></button>
-           <button class="button-5" id="a16" onclick="hideButton('a16')"></button>
-           <button class="button-5" id="a17" onclick="hideButton('a17')"></button>
-           <button class="button-5" id="a18" onclick="hideButton('a18')"></button>
-           <button class="button-5" id="a19" onclick="hideButton('a19')"></button>
-           <button class="button-5" id="a20" onclick="hideButton('a20')"></button>
-           <button class="button-5" id="a21" onclick="hideButton('a21')"></button>
-           <button class="button-5" id="a22" onclick="hideButton('a22')"></button>
-           <button class="button-5" id="a23" onclick="hideButton('a23')"></button>
-           <button class="button-5" id="a24" onclick="hideButton('a24')"></button>
-           <button class="button-5" id="a25" onclick="hideButton('a25')"></button>
-           <button class="button-5" id="a26" onclick="hideButton('a26')"></button>
-           <button class="button-5" id="a27" onclick="hideButton('a27')"></button>
-           <button class="button-5" id="a28" onclick="hideButton('a28')"></button>
-           <button class="button-5" id="a29" onclick="hideButton('a29')"></button>
-           <button class="button-5" id="a30" onclick="hideButton('a30')"></button>
-           <button class="button-5" id="a31" onclick="hideButton('a31')"></button>
-           <button class="button-5" id="a32" onclick="hideButton('a32')"></button>
-           <button class="button-5" id="a33" onclick="hideButton('a33')"></button>
-           <button class="button-5" id="a34" onclick="hideButton('a34')"></button>
-           <button class="button-5" id="a35" onclick="hideButton('a35')"></button>
-           <button class="button-5" id="a36" onclick="hideButton('a36')"></button>
+           <button class="button-5" id="a7" onclick="hideButton('a7')">7</button>
+           <button class="button-5" id="a8" onclick="hideButton('a8')">8</button>
+           <button class="button-5" id="a9" onclick="hideButton('a9')">9</button>
+           <button class="button-5" id="a10" onclick="hideButton('a10')">10</button>
+           <button class="button-5" id="a11" onclick="hideButton('a11')">11</button>
+           <button class="button-5" id="a12" onclick="hideButton('a12')">12</button>
+           <button class="button-5" id="a13" onclick="hideButton('a13')">13</button>
+           <button class="button-5" id="a14" onclick="hideButton('a14')">14</button>
+           <button class="button-5" id="a15" onclick="hideButton('a15')">15</button>
+           <button class="button-5" id="a16" onclick="hideButton('a16')">16</button>
+           <button class="button-5" id="a17" onclick="hideButton('a17')">17</button>
+           <button class="button-5" id="a18" onclick="hideButton('a18')">18</button>
+           <button class="button-5" id="a19" onclick="hideButton('a19')">19</button>
+           <button class="button-5" id="a20" onclick="hideButton('a20')">20</button>
+           <button class="button-5" id="a21" onclick="hideButton('a21')">21</button>
+           <button class="button-5" id="a22" onclick="hideButton('a22')">22</button>
+           <button class="button-5" id="a23" onclick="hideButton('a23')">23</button>
+           <button class="button-5" id="a24" onclick="hideButton('a24')">24</button>
+           <button class="button-5" id="a25" onclick="hideButton('a25')">25</button>
+           <button class="button-5" id="a26" onclick="hideButton('a26')">26</button>
+           <button class="button-5" id="a27" onclick="hideButton('a27')">27</button>
+           <button class="button-5" id="a28" onclick="hideButton('a28')">28</button>
+           <button class="button-5" id="a29" onclick="hideButton('a29')">29</button>
+           <button class="button-5" id="a30" onclick="hideButton('a30')">30</button>
+           <button class="button-5" id="a31" onclick="hideButton('a31')">31</button>
+           <button class="button-5" id="a32" onclick="hideButton('a32')">32</button>
+           <button class="button-5" id="a33" onclick="hideButton('a33')">33</button>
+           <button class="button-5" id="a34" onclick="hideButton('a34')">34</button>
+           <button class="button-5" id="a35" onclick="hideButton('a35')">35</button>
+           <button class="button-5" id="a36" onclick="hideButton('a36')">36</button>
            
 
             
         </div>
-            <button onclick="Dis()">click here first</button>
+            
                 
     </div>
 </body>
